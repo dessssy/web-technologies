@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('resources/icomoon.eot?9snxoz');
+    src:  url('resources/icomoon.eot?9snxoz#iefix') format('embedded-opentype'),
+      url('resources/icomoon.ttf?9snxoz') format('truetype'),
+      url('resources/icomoon.woff?9snxoz') format('woff'),
+      url('resources/icomoon.svg?9snxoz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-key:before {
+    content: "\e98d";
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.wrapper,
+.content-wrapper,
+.main-content,
+image,
+footer {
+    display: flex;
+}
+
+.section-one,
+.section-two,
+.section-three {
+    margin-top: 20px;
+}
+
+/* UTILS */
+
+h1 {
+    margin: 20px;
+    font-family: 'Lora', serif;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+}
+
+ul {
+    width: 800px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #c1e0ff;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid blue;
+}
+
+.logo {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #347dc6;
+}
+
+.icon-user::before{
+    font-family: 'icomoon';
+    font-size: 15px;
+    color: blue;
+}
+
+.email,
+.pass {
+    margin-left: 5px;
+    height: 25px;
+}
+
+.icon-key::before {
+    font-family: 'icomoon';
+    font-size: 15px;
+    color: blue;
+}
+
+button {
+    padding: 5px;
+    background-color:#347dc6;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #fff;
+    color: #347dc6;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    background-color: #fff;
+    border: 1px solid #347dc6;
+    border-radius: 2px;
+    padding: 5px 10px 15px 10px;
+}
+
+/* MAIN */
+
+.content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* SECTIONS */
+
+.image {
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-one {
+    padding-left: 15px;
+    border-left: 2px solid orange;
+}
+
+.image-html5 > h3::before {
+    content: "<";
+    color: orange;
+}
+
+.image-html5 >h3::after {
+    content: ">";
+    color: orange;
+}
+
+.image-html5 > h3 {
+    color: orange;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.section-two {
+    padding-left: 15px;
+    border-right: 2px solid blue;
+}
+
+.image-css3 > h3::before {
+    content: "{";
+    color: blue;
+}
+
+.image-css3 > h3 {
+    color: blue;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.image-css3 > h3::after {
+    content: "}";
+    color: blue;
+}
+
+.image-css3 {
+    order: 2;
+}
+
+.section-three {
+    padding-left: 15px;
+    border-left: 2px solid yellow;
+    margin-bottom: 20px;
+}
+
+.image-js > h3::before {
+    content: "(";
+    color: yellow;
+}
+
+.image-js > h3 {
+    color: yellow;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.image-js > h3::after {
+    content: ")";
+    color: yellow;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid blue;
+    background-color: #c1e0ff;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    color: #347dc6;
+}
